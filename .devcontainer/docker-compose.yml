@@ -1,0 +1,27 @@
+version: "3"
+services:
+  bakethiscake:
+    container_name: vue-cli
+    restart: always
+    command: vue ui --host 0.0.0.0 --port 8000
+    build:
+      context: ..
+      dockerfile: Dockerfile
+
+    ports:
+      - "80:80"
+      - "8000:8000"
+      - "8080:8080"
+
+    volumes:
+      - "..:/usr/src"
+      - "/usr/src/node_modules"
+
+    links:
+      - mongo
+
+  mongo:
+    container_name: mongo
+    image: mongo
+    ports:
+      - 27017:27017

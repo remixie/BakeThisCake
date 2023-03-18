@@ -10,6 +10,9 @@
     "dev": "nodemon api/server.js",
     "db:seed": "node bin/seed.js"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "dependencies": {
     "axios": "^0.19.0",
     "babel-loader": "^8.0.6",

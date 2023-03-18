@@ -1,6 +1,9 @@
 {
   "name": "bake-this-cake",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x"
+  },
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -9,9 +12,6 @@
     "start": "node api/server.js",
     "dev": "nodemon api/server.js",
     "db:seed": "node bin/seed.js"
-  },
-  "engines": {
-    "node": "16.x"
   },
   "dependencies": {
     "axios": "^0.19.0",

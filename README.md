@@ -8,7 +8,7 @@
 
 2. Download VS Code and install it. Open it up and install the extension pack [**Remote Development**](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) by Microsoft.
 
-    - **If you're running Windows:** Do steps 2a and 2b.
+    - **If you're running Windows:** Do steps 2a and 2b
 
     - **If you're running macOS:** Do only step 2a.
 
